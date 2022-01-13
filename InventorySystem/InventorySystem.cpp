@@ -121,15 +121,15 @@ public:
 		}
 	}
 
-	std::string viewCategory(int id) {
+	   void viewCategory(int id) {
 		//If ID is valid display category
 		if (id >= 0) {
 			std::cout << "Item category: " << categories[id] << std::endl;
 		}
-		//Else error and return empty string
+		//Else error and return 
 		else {
 			std::cout << "ERROR: Invalid ID" << std::endl;
-			return "";
+			return;
 		}
 	}
 };
